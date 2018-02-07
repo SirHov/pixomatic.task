@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sortable List</title>
+
+        <!-- Css Files -->
+        <link href="css/style.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="container">
+            <h2>The users list that you added</h2>
+            <ul id="sortable" class="sortable">
+
+            </ul>
+
+            <div id="user-form">
+                <form class="form" action="">
+                    <div class="form-item">
+                        <label class="form-label">Please input full name</label>
+                        <input  type="text" name="full-name" autofocus />
+                        <p class="error-message">This field is required</p>
+                    </div>
+                    <div class="form-item">
+                        <input type="submit" value="Add User" class="btn" />
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+
+        <!-- Scripts -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" defer></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" defer></script>
+        <script src="js/scripts.js" defer></script>
+    </body>
+</html>

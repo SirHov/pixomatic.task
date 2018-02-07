@@ -1,0 +1,217 @@
+@charset "UTF-8";
+/*
+1. Reset Css
+2. General
+3. Form
+*/
+
+/*
+1. Reset Css
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box; }
+
+/*
+2.Typography
+*/
+h1, h2, h3, h4, h5, h6{
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+h2{
+    font-size: 24px;
+}
+
+
+/*
+3. General
+*/
+.hide{
+    display: none;
+}
+body{
+    font-size: 12px;
+    line-height: 14px;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+.container{
+    width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
+    border: 2px solid #000000;
+    border-radius: 7px;
+
+}
+
+
+/*sortable*/
+.sortable {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.sortable li {
+    position: relative;
+    border-top: 2px solid #e6e6e6;
+    background: #f7f7f7;
+    color: #000000;
+    margin: 0px 3px 7px 3px;
+    padding: 16px 15px 16px 46px;
+    font-size: 18px;
+    cursor: all-scroll;
+}
+.sortable li span {
+    position: absolute;
+    margin-left: 14px;
+    padding: 3px 0;
+    width: 16px;
+    border-top: 3px solid #e6e6e6;
+    border-bottom: 3px solid #e6e6e6;
+    display: block;
+    left: 0;
+}
+.sortable li span:before{
+    display: block;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #e6e6e6;
+}
+
+/*
+4. Form
+*/
+.form{
+    margin-top: 25px;
+    padding: 25px;
+    border-top: 2px solid #e6e6e6;
+}
+select,
+textarea,
+input[type='url'],
+input[type='tel'],
+input[type='time'],
+input[type='text'],
+input[type='email'],
+input[type='number'],
+input[type='search'],
+input[type='password'],
+input[type='week'],
+input[type='date'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='month'],
+.form-item {
+    display: block;
+    width: 100%;
+    padding: .5rem 1.25rem;
+    line-height: 1.25;
+    color: inherit;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    background-image: none;
+    border: 2px solid #e6e6e6;
+}
+.form-item {
+    margin-bottom: 25px;
+    border: 2px solid transparent;
+}
+.form-item .error-message{
+    display: none;
+    color: red;
+    font-size: 10px;
+    font-style: italic;
+}
+.form-item.error .error-message{
+    display: block;
+}
+.form-item.error input{
+    border: 2px solid red;
+}
+.form-label {
+    display: block;
+    line-height: 1.1em;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    margin-bottom: 10px;
+}
+
+/*
+    5. Components
+*/
+/*
+    5.1 Buttons
+*/
+/**
+ * Buttons
+ */
+.btn {
+    font-family: inherit;
+    font-size: 0.9em;
+    font-weight: 100;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    padding: 1.2rem 3rem;
+    display: inline-block;
+    background: #000000;
+    border-radius: 0;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    box-shadow: transparent 0 0 0;
+    transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; }
+.btn:hover {
+    box-shadow: -1px 2px 4px rgba(0, 0, 0, 0.25); }
